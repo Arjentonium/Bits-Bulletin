@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BITS Bulletin</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
     <script src="script.js" defer></script>
 </head>
 <body>
@@ -35,7 +36,19 @@
         <div class="container">
             <h2>Login</h2>
             <p>Sign in to access your personalized dashboard.</p>
-            <button id="google-login-btn">Login with Google</button>
+            <div id="g_id_onload"
+                 data-client_id="YOUR_GOOGLE_CLIENT_ID"
+                 data-callback="handleCredentialResponse"
+                 data-auto_prompt="false">
+            </div>
+            <div class="g_id_signin"
+                 data-type="standard"
+                 data-size="large"
+                 data-theme="outline"
+                 data-text="sign_in_with"
+                 data-shape="rectangular"
+                 data-logo_alignment="left">
+            </div>
         </div>
     </section>
 
@@ -81,3 +94,4 @@
     </footer>
 </body>
 </html>
+

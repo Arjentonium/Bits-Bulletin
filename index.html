@@ -1,65 +1,83 @@
-{\rtf1\ansi\ansicpg1252\cocoartf2709
-\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;}
-{\*\expandedcolortbl;;}
-\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BITS Bulletin</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>BITS Bulletin</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#login">Login</a></li>
+                    <li><a href="#categories">Categories</a></li>
+                    <li><a href="#schedule">Schedule</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-\f0\fs24 \cf0 <!DOCTYPE html>\
-<html lang="en">\
-<head>\
-    <meta charset="UTF-8">\
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">\
-    <title>BITS Bulletin</title>\
-    <link rel="stylesheet" href="style.css">\
-</head>\
-<body>\
-    <header>\
-        <div class="container">\
-            <h1>BITS Bulletin</h1>\
-            <nav>\
-                <ul>\
-                    <li><a href="#home">Home</a></li>\
-                    <li><a href="#features">Features</a></li>\
-                    <li><a href="#team">Team</a></li>\
-                </ul>\
-            </nav>\
-        </div>\
-    </header>\
-    <section id="home">\
-        <div class="container">\
-            <h2>Welcome to BITS Bulletin</h2>\
-            <p>Your centralized platform for staying informed and engaged with campus events and activities.</p>\
-        </div>\
-    </section>\
-    <section id="features">\
-        <div class="container">\
-            <h2>Features</h2>\
-            <ul>\
-                <li><strong>Automated Email Retrieval:</strong> Fetches campus emails automatically.</li>\
-                <li><strong>User-Defined Interests:</strong> Subscribe to categories based on preferences.</li>\
-                <li><strong>Enhanced Accessibility:</strong> Access all relevant information in one place.</li>\
-            </ul>\
-        </div>\
-    </section>\
-    <section id="team">\
-        <div class="container">\
-            <h2>Our Team</h2>\
-            <p>This project was created by Group 1, focusing on solving information overload in academic environments.</p>\
-            <ul>\
-                <li>Arjun Pardal</li>\
-                <li>Soumya Dipesh Dedhia</li>\
-                <li>Nilay Sadanand Borkar</li>\
-                <li>Harshit Negi</li>\
-                <li>Prakhar Ranjan</li>\
-            </ul>\
-        </div>\
-    </section>\
-    <footer>\
-        <div class="container">\
-            <p>&copy; 2024 BITS Bulletin. All Rights Reserved.</p>\
-        </div>\
-    </footer>\
-</body>\
-</html>\
-}
+    <!-- Home Section -->
+    <section id="home">
+        <div class="container">
+            <h2>Welcome to BITS Bulletin</h2>
+            <p>Your one-stop solution for managing campus-related emails and staying updated with all events.</p>
+        </div>
+    </section>
+
+    <!-- Login Section -->
+    <section id="login">
+        <div class="container">
+            <h2>Login</h2>
+            <p>Sign in to access your personalized dashboard.</p>
+            <button id="google-login-btn">Login with Google</button>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section id="categories">
+        <div class="container">
+            <h2>Select Your Categories</h2>
+            <p>Choose the categories you are interested in:</p>
+            <form id="category-form">
+                <label>
+                    <input type="checkbox" name="category" value="Clubs"> Clubs
+                </label>
+                <label>
+                    <input type="checkbox" name="category" value="Departments"> Departments
+                </label>
+                <label>
+                    <input type="checkbox" name="category" value="Events"> Events
+                </label>
+                <label>
+                    <input type="checkbox" name="category" value="Newsletters"> Newsletters
+                </label>
+                <button type="submit">Save Preferences</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Schedule Section -->
+    <section id="schedule">
+        <div class="container">
+            <h2>Your Schedule</h2>
+            <p>See the schedule for selected mail categories:</p>
+            <div id="schedule-container">
+                <!-- Dynamic content will be loaded here -->
+                <p>No schedule available. Please select categories.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 BITS Bulletin. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

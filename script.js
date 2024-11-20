@@ -22,6 +22,39 @@
             </nav>
         </div>
     </header>
+document.addEventListener("DOMContentLoaded", () => {
+    // Simulated login logic
+    const googleLoginBtn = document.getElementById("google-login-btn");
+    const usernameSection = document.getElementById("username-section");
+    const usernameForm = document.getElementById("username-form");
+    const welcomeMessage = document.getElementById("welcome-message");
+    const displayUsername = document.getElementById("display-username");
+
+    // Simulated Google Login Callback
+    googleLoginBtn.addEventListener("click", () => {
+        alert("Logged in successfully! Enter your username.");
+        usernameSection.style.display = "block"; // Show username input section after login
+    });
+
+    // Handle Username Submission
+    usernameForm.addEventListener("submit", (e) => {
+        e.preventDefault();
+        const username = document.getElementById("username").value;
+
+        // Validate username
+        if (username.trim() === "") {
+            alert("Please enter a valid username.");
+            return;
+        }
+
+        // Display the welcome message
+        displayUsername.textContent = username;
+        welcomeMessage.style.display = "block";
+
+        // Hide the username input section
+        usernameSection.style.display = "none";
+    });
+});
 
     <!-- Home Section -->
     <section id="home">

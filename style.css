@@ -103,6 +103,48 @@ footer {
     padding: 15px 0;
     font-size: 0.9em;
 }
+/* Welcome Message Styling */
+.welcome-message {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: #0073e6;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    z-index: 1000;
+}
+
+/* Username Section Styling */
+#username-section {
+    margin: 20px auto;
+    text-align: center;
+}
+
+#username-form input {
+    padding: 10px;
+    font-size: 16px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 80%;
+}
+
+#username-form button {
+    background: #0073e6;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#username-form button:hover {
+    background: #005bb5;
+}
 
 /* Responsive Styling */
 @media (max-width: 768px) {

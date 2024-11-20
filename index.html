@@ -25,7 +25,24 @@
             </nav>
         </div>
     </header>
+<!-- Username Input Section -->
+<section id="username-section" style="display: none;">
+    <div class="container">
+        <h2>Enter Your Username</h2>
+        <form id="username-form">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" placeholder="Enter your username" required>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</section>
 
+<!-- Welcome Message Placeholder -->
+<header>
+    <div class="welcome-message" id="welcome-message" style="display: none;">
+        Welcome, <span id="display-username"></span>
+    </div>
+</header>
     <!-- Home Section -->
     <section id="home">
         <div class="container">
